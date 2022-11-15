@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCUESTA</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+    <nav style="background-image: url(./img/fondo\ 1.jpg);font-size: 20px;"> <h1 style="color: white; font-size: 50px;">santo pecado</h1> 
+        <body>
+            <h1><a href="./santopecado.html" style="color: yellow;font-size: 30px;">menu</a> </h1>
+            <center>
+            <TABLE border="1">
+             
+                    <th><a href="./hamburgesas.html " style="color: yellow;">HAMBURGESAS</a> </th>
+                    <th><a href="./perros.html" style="color: yellow;">PERROS</a> </th>
+                    <th><a href="./combos.html" style="color:yellow;"> COMBOS</a></th>
+                    <th><a href="./promociones.html" style="color: yellow ;">PROMOCIONES</a> </th>
+                
+            </TABLE>
+            </center>
+        
+        </nav>
+        
+    <main>
+
+        <h1>*****encuesta de satisfaccion*****</h1>
+       
+<form>
+            <fieldset style="width: max-content;">
+                <legend>DATOS DEL CLIENTE</legend>
+                    
+                        <table>
+                            <tr>
+                            <td><label for="nombre">Nombre:</label></td>
+                            <td><input type="text" name="nombre" id="nombre" required></td>
+                            <td><label for="apellido">Apellido:</label></td>
+                            <td><input type="text" name="apellido" id="apellido"></td>
+                          
+
+                        </tr>
+                        <tr>
+                            <td><label for="fecha de encuesta">Fecha de encuesta:</label></td>
+                            <td><input type="date" name="fecha de encuesta" id="fecha de encuesta"></td>
+                            <td><label for="identificacion">Identificacion:*</label></td>
+                            <td><input type="number" name="identificacion" id="identificacion" required placeholder="Obligatorio Max(12)Nro "></td>
+                        </tr>
+
+                        <tr>
+                            
+                            <td><label for="correo">Correo Electronico:</label></td>
+                            <td><input type="email" name="correo" id="correo Electronico"></td>
+                            <td><label for="genero">Genero :</label></td>
+                            <td><input type="radio" name="genero" id="genero"> Masculino <input type="radio" name="genero" id="genero">Femenino</td>
+
+                        </tr>
+
+                        <tr>
+                            <td><label for="edad">Edad:</label></td>
+                            <td><input type="number" name="edad" id="edad"></td>
+                            <td><label for="celular">Celular:</label></td>
+                            <td><input type="number" name="celular" id="celular" placeholder="### ### ## ##"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sede">Sede en la que consumio:</label></td>
+                            <td><select name="sede" id="sede">
+                                <option value="sede">Elija una opcion</option>
+                                <option value="sede">Sede Bello</option>
+                                <option value="sede">Sede el Poblado</option>
+                                <option value="sede">Sede la Estrella</option>
+                                <option value="sede">Sede Sabaneta</option>
+                            </select></td>
+                        </tr>
+                        </table>
+                     
+                    
+                    
+                
+            </fieldset>
+
+
+            <h1>******preguntas******</h1>
+
+   
+            <ol>
+                <li>¿ Cada caunto consume usted comidad rapidad?</li><br>
+                <select name="encuesta" id="encuesta">
+                    <option value="encuesta">Elija una opcion</option>
+                    <option value="encuesta">1 vez al mes</option>
+                    <option value="encuesta">2 veces al mes </option>
+                    <option value="encuesta">3 veces al mes</option>
+                    <option value="encuesta">4 veces al mes</option>
+                    <option value="encuesta">5 o mas veces</option>
+                </select>
+
+                <br><br>
+
+                <li>¿ Del 1 al 5 como nos califica?</li><br>
+
+                <input type="radio" name="calificacion" id="calificacion" style="color: red  ; background-color: brown;">1<input type="radio" name="calificacion" id="calificacion">2<input type="radio" name="calificacion" id="calificacion">3<input type="radio" name="calificacion" id="calificacion">4<input type="radio" name="calificacion" id="calificacion" required>5
+
+
+                <br><br>
+
+                <li>¿Indique que tan buena o que tan pesima estuvo la comida?</li> <br><br>
+                  <input type="range" name="rango" min="1" max="10">
+
+                  <br><br>
+
+                  <li>¿Indique que tan bueno estuvo el servicio?</li> <br><br>
+                  <input type="range" name="rango" min="1" max="10">
+
+                  <li>¿Nos Recomendaria?</li><br><br>
+                  <label for="recomedacion"></label>
+                  <input type="checkbox" name="recomendacion" id="recomendacion" checked>SI <br>
+                  <input type="checkbox" name="recomendacion" id="recomendacion" checked>NO <br>
+
+                  <br><br>
+            
+
+                    <li>Dejanos tu comentario.</li><br><br>
+                    <textarea name="texto" rows="4" cols="40" placeholder="Escriba algo" required></textarea>
+
+            </ol>
+            
+            
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="borrar">
+        </form>
+    </main>
+    <br><br>
+    <hr><hr>
+    <br><br>
+    <footer style="background-image: url(./img/fondo2.jpg);">
+
+
+
+        <center>
+              <table>
+              
+              <tr>
+                  <th style="background-color: rgb(222, 252, 117);" ><h2 style="text-align: center;">SEDE PRINCIPAL</h2></th>
+              </tr>
+              <th rowspan="2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126895.89036346415!2d-75.62841352418317!3d6.329644454068293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442fa45a85acaf%3A0x2cfb3e61fe57b5b1!2sRestaurante%20Casa%20Vieja!5e0!3m2!1ses!2sco!4v1651525718471!5m2!1ses!2sco" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></th>
+            
+              <tr>
+              
+                  <td>
+                      <ul style="color: rgb(17, 11, 11);">
+      
+                      <li style="background-color: rgb(222, 252, 117);"><<h4 style="text-align: center; color: red;" >SEDE PRINCIPAL BELLO :</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, numquam. Porro voluptas pariatur animi soluta enim veniam aspernatur incidunt consectetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro odio blanditiis ab ipsa magni omnis adipisci aut sunt facilis repellat.</p></li>
+              
+                      <li style="background-color: rgb(222, 252, 117);"><h4 style="text-align: center; color: red;" >SEDE SABANETA :</h4><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ea eius officiis aspernatur et excepturi fuga, nobis doloribus suscipit similique? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quia qui maxime sit dolore perspiciatis nisi vero tempora saepe repellendus.</p></li>
+      
+                      <li style="background-color: rgb(222, 252, 117);"><h4 style="text-align: center; color: red;" >SEDE EL POBLADO:</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eos dolores ratione iste facere praesentium consectetur optio, saepe explicabo vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur sunt incidunt quod fuga dolorem libero sint. Ad, similique eius?</p></li>
+      
+                      <li style="background-color: rgb(222, 252, 117);"><h4 style="text-align: center; color: red;" >SEDE LA ESTRELLA :</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur minima minus facere animi id omnis dolore et at sapiente vero! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam adipisci necessitatibus quasi. Asperiores vitae quia debitis reprehenderit doloremque, voluptate quibusdam?</p></li>
+      
+              
+                      </ul>
+                  </td>
+      
+              </tr>
+              
+              </table>
+      
+          </center>
+              
+              </article>
+      
+      
+      
+      
+      
+      
+      </footer>
+
+
+      <button type="button" class="btn btn-outline-dark" style="background-color:rgb(255, 251, 16) ;">a</button>
+</html>

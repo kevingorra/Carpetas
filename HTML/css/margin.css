@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} /*formatear documento */
+
+
+body{
+    background-image: url(/img/fondo3.jpg);
+    background-size:cover;
+    background-color: aqua;
+    margin: 50px;
+}
+
+.titulo{
+    margin: 50px 30px 70px 40px;
+    line-height: 40px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    /*border: 10px outset red;*/
+    border-bottom: 10px outset red;
+    border-top: 20px groove yellow;
+}
+
+.box{
+    border: 1px;
+    height: 100px;
+    width: 330px;
+}
+.padre{
+    border: 1px solid;
+    display: flex;
+}
+.caja1{background-color: azure;
+    margin: 0px auto;
+}
+.caja2{
+    background-color: blue;
+    padding: 20px 5px 10px 15px;
+    margin: 0px 30px;
+}
+.caja3{background-color: rgb(229, 255, 0);
+        height: 400px;;
+        margin-top:  10px;
+        width: 100%;
+        text-align: center;
+
+}
+
+img{
+    width: 30%;
+    height: 200px;
+}

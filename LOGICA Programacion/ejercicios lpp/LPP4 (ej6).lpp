@@ -1,0 +1,52 @@
+/*PARA LA MATERIA DE DESTREZAS SE DETERMINÓ CON LOS ESTUDIANTES QUE, SI LA NOTA DEL PRIMER QUIZ 
+ERA MENOR QUE LA DEL SEGUNDO, SE SUSTITUÍA LA PRIMERA NOTA POR LA SEGUNDA. ELABORE UN ALGORITMO 
+QUE LE PERMITA AL PROFESOR INGRESAR LAS 4 NOTAS QUE OBTUVO UN ALUMNO Y EL COMPUTADOR LE MUESTRE 
+LA NOTA DEFINITIVA Y LA CALIFICACIÓN CUALITATIVA QUE ES: “E” SI ES MAYOR O IGUAL A 4.5, “S” SI ES MAYOR 
+O IGUAL A 4.0  Y MENOR DE 4.5, “B” SI ES MAYOR O IGUAL A 3.5  Y MENOR DE 4.0, “A” SI ES MAYOR O IGUAL A 3.0  
+Y MENOR DE 3.5, “D” SI ES MAYOR O IGUAL A 2.0  Y MENOR DE 3.0 E “I” SI ES MENOR DE 2.0*/
+
+cadena [30] nom
+real n1, n2, n3, n4, notadef
+
+inicio 
+	escriba "Digite el nombre del estudiante : "
+	lea nom
+	escriba "digite la primera nota de la materia de Destrezas : "
+	lea n1 
+	escriba "digite la segunda nota de la materia de Destrezas : "
+	lea n2
+	escriba "digite la tercera nota de la materia de Destrezas : "
+	lea n3 
+	escriba "digite la cuarta nota de la materia de Destrezas : "
+	lea n4 
+	
+	si (n1 < n2) entonces 
+		notadef <- (n2 + n2 + n3 + n4)/4
+	sino
+		  notadef <- (n1 + n2 + n3 + n4)/4
+	fin si 
+	
+	escriba nom," tiene una nota definitiva de : ", notadef
+	
+		si (notadef >=4.5) entonces
+			escriba " y su calificacion cualitativa es 'E'  Excelente "
+		sino
+			si (notadef >=4.0) entonces 
+				escriba " y su calificacion cualitativa es 'S'  Sobresaliente" 
+			sino
+				si (notadef >=3.5) entonces
+					escriba " y su calificacion cualitativa es 'B' Bueno  "
+				sino
+					si (notadef >=3.0) entonces
+						escriba " y su calificacion cualitativa es 'A' Aceptable  "
+					sino
+						si (notadef >=2.0) entonces
+							escriba " y su calificacion cualitativa es 'D' Deficiente "
+						sino
+							escriba " y su calificacion cualitativa es 'I'  Insuficiente "
+						fin si
+					fin si
+				fin si 
+			fin si
+		fin si
+fin

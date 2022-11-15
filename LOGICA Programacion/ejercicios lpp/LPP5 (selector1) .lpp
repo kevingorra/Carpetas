@@ -1,0 +1,103 @@
+cadena[30]nom
+real vrcre, vrnto, rec, desc, vrbto
+entero nrcre
+caracter estr
+
+inicio
+	 escriba "nombre : "
+	 lea nom
+	 escriba "numero de creditos: "
+	 lea nrcre
+	 escriba " valor credito: "
+	 lea vrcre
+	 escriba "estrato: "
+	 lea estr
+	 
+	  vrbto <- nrcre * vrcre
+	 
+	 
+	 caso estr
+	 	
+	 	'1':desc <- vrbto * 40/100
+	 	    rec  <- 0
+	 	'2':desc <- vrbto * 30 / 100
+	 	 	rec  <- 0
+	 	'3':desc <- vrbto * 10/100
+	 	 	rec  <-  0
+	 	'4':desc <- 0
+	 	 	rec <- vrbto * 10/100
+	 	'5':desc <- 0
+	 	 	rec  <- vrbto * 20/100		
+	 	'6':desc <- 0
+	 	 	rec  <- vrbto * 40/100	
+	 	 	 	
+	 sino :
+	 		llamar nueva_linea()
+	 	 	llamar color_texto(4)
+	 	 	escriba "estrato no valido"
+	 	 	desc <- 0
+	 	 	rec  <- 0
+	fin caso
+	
+	 
+	
+	/* si ( estr = '1') entonces
+	 	 desc <- vrbto * 40/100
+	 	 rec  <- 0
+	 
+	 sino
+	 	 si(estr = '2')entonces
+	 	 	desc <- vrbto * 30 / 100
+	 	 	rec  <- 0
+	 	 
+	 	 sino 
+	 	 	 si(estr = '3') entonces
+	 	 	 	desc <- vrbto * 10/100
+	 	 	 	rec   <-  0
+	 	 	 sino 
+	 	 	 	 si (estr = '4')entonces
+	 	 	 	 	desc <- 0
+	 	 	 		rec   <- vrbto * 10/100
+	 	 	 	sino 
+	 	 	 		si (estr = '5')entonces
+	 	 	 	 		desc <- 0
+	 	 	 			rec  <- vrbto * 20/100
+	 	 	 		sino 
+	 	 	 			si (estr = '6')entonces
+	 	 	 	 			desc <- 0
+	 	 	 				rec  <- vrbto * 40/100
+	 	 	 			sino
+	 	 	 				llamar nueva_linea()
+	 	 	 				llamar color_texto(4)
+	 	 	 				escriba "estrato no valido"
+	 	 	 					desc <- 0
+	 	 	 					rec  <- 0
+	 	 	 			fin si 
+	 	 	 		fin si
+	 	 	 	fin si
+	 	 	 fin si
+	 	 fin si
+	 fin si */
+	 
+	 	vrnto <- vrbto - desc + rec
+	 	llamar nueva_linea()
+	 	escriba nom
+	 	llamar nueva_linea()
+	 	escriba "valor bruto: $ ",vrbto
+	 	llamar nueva_linea()
+	 	escriba "descuento: $ ", desc
+	 	llamar nueva_linea()
+	 	escriba "recargo: $ ", rec
+	 	llamar nueva_linea()
+	 	escriba "valor neto: $ ",vrnto
+	 	 
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+	 	
+fin	 	
+	 	
+	 	

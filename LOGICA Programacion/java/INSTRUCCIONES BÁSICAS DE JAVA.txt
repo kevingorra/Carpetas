@@ -1,0 +1,110 @@
+
+		FORMATOS DE INSTRUCCIONES BÁSICAS EN JAVA
+
+IMPORTAR LA CLASE:
+	import  java.util.Scanner;
+-----------------------------------------------------------------------
+
+INSTANCIAR LA CLASE:
+	Scanner objLector = new Scanner(System.in);
+-----------------------------------------------------------------------
+
+DECLARAR VARIABLES:
+	CADENA  -->  String
+	CARACTER -> Character
+	ENTERO   -->  int
+	REAL        -->  float
+-----------------------------------------------------------------------
+
+INSTRUCCIÓN ESCRIBA
+	System.out.print(variables + "constantes");
+-----------------------------------------------------------------------
+
+SALTO DE LINEA:
+	System.out.println();
+-----------------------------------------------------------------------
+
+INSTRUCCIÓN LEA
+	CADENA    --> nom = objLector.next();
+	CARACTER ->  ec = objLector.next(). charAt(0);
+	ENTERO    --> ed = objLector.nextInt();
+	REAL         --> est = objLector.nextFloat();
+-----------------------------------------------------------------------
+
+DECISIÓN LÓGICA CON TIPOS NUMÉRICOS
+	if ( variable op.lóg   valor     )  ------> op. lóg :    >, >=, <, <=, ==, !=
+	{
+
+	}
+	else
+	{
+
+	}
+-----------------------------------------------------------------------
+
+DECISIÓN LÓGICA CON TIPO CADENA
+	if (sx.equals("f") )------>   SI (SX = "F")     - if (ciudad.equals("MEDELLÍN") ) ---> SI (CIUDAD = "MEDELLÍN")
+	{
+
+	}
+	else
+	{
+
+	}
+-----------------------------------------------------------------------	
+
+SELECTOR MÚLTIPLE
+	switch (ec)
+            	{
+                             case VALOR1:	
+                            {
+                             
+                             	break;    
+                            }
+                    
+	           case VALOR2:	
+                            {
+                             
+                             	break;    
+                            }
+                  
+
+                    
+                            default:
+                            {
+                               
+                               break;
+                            }                  
+                 }
+-----------------------------------------------------------------------
+
+CICLO PARA
+	for ( J = 1 ; J <= N ; J++)
+	{
+
+
+
+	}
+-----------------------------------------------------------------------
+
+CICLO MIENTRAS
+	WHILE ( EXP. LÒGICA)
+	{
+
+
+
+	}
+
+-----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+	   

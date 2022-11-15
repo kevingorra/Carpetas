@@ -1,0 +1,55 @@
+/*5.	LABORAR UN PROGRAMA QUE LE PERMITA A UN USUARIO INGRESAR EL NOMBRE DE UN TRABAJADOR, 
+Y EL NÚMERO DE HORAS TRABAJADAS, SE PIDE QUE EL PROGRAMA LE IMPRIMA EL SALARIO BRUTO, LAS BONIFICACIONES, 
+LAS DEDUCCIONES Y EL SALARIO NETO; TENIENDO EN CUENTA QUE LAS BONIFICACIONES SERÁN DE $20.000.OO SI TRABAJÓ 
+COMO MÁXIMO 48 HORAS, DE $50.000.OO SI TRABAJO ENTRE 49 Y 58 HORAS Y DE $100.000 SI TRABAJÓ MÁS DE 58 HORAS. 
+LAS DEDUCCIONES SON DE $10.000 SI EL SALARIO BÁSICO HORA ES MENOR DE $5.000.OO, DE $20.000.OO SI  EL SALARIO 
+BÁSICO HORA ES MAYOR DE $5.000.OO Y MENOR DE $8.000.OO Y DE $ 50.000.OO SI SU SALARIO BÁSICO HORA ES DE $8.000.OO O MAS.
+
+*/
+
+cadena [30] nom
+real nht, sbh, sbto, bon, ded, snto
+inicio
+	
+	escriba "digite el nombre del trabajador : "
+	lea nom
+	escriba "digite el numero de horas trabajadas :"
+	lea nht
+	escriba "digite el salario basico hora : "
+	lea sbh
+	sbto <- nht * sbh
+	llamar nueva_linea()
+	escriba "su salario bruto es de $ " , sbto
+	llamar nueva_linea()
+	si (nht <= 48)entonces
+		bon <- 20000
+		sino
+			si (nht > 48) y (nht <= 58)entonces
+				bon <- 50000
+				sino
+					si(nht >58) entonces
+					bon <- 100000
+			fin si 
+		fin si
+	fin si 
+	
+	escriba "su bonificacion es de  $ " ,bon
+	
+	llamar nueva_linea()
+	si(sbh < 5000)entonces
+		ded <- 10000
+		sino
+			si (sbh < 8000)entonces
+				ded <- 20000
+				sino
+					ded <- 50000
+		
+				fin si
+		fin si
+		
+	escriba "sus deduciones son de  $ ",ded
+	llamar nueva_linea()
+	snto <- sbto + bon - ded
+	escriba "su salario neto es de  $ ", snto			
+fin 
+	

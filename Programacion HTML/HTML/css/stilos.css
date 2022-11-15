@@ -1,0 +1,24 @@
+body{ 
+    background-color: yellowgreen;
+}
+
+h1{
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+article{
+    background-color: royalblue;
+    font-size: 10px;
+}
+
+.formato{font-size: 28px;
+         background-color: aqua;
+}
+
+#titulo2{
+        background-color: beige;
+        color: brown;
+}

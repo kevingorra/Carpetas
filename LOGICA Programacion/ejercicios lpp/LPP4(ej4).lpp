@@ -1,0 +1,37 @@
+/*Se necesita un programa que diga si una persona es apta para un equipo de baloncesto o no, 
+para que sea apto debe cumplir que si es hombre sea mayor de edad, que mida mas de 1.70 mts., 
+que pese menos de 75 kg., o si es mujer que tenga más de 16 años, que mida como mínimo 1.70 y 
+que pese como máximo 60 kg. Se debe leer el nombre, el sexo (F = femenino, M = masculino), la edad, la estatura y el peso.*/
+
+cadena[30] nom, sexo
+real peso, est,edad
+
+inicio
+
+	escriba "Digite el nombre de la persona que se va inscribir a baloncesto: "
+	lea nom
+	escriba "Digite cuantos kilogramos pesa : "
+	lea peso
+	escriba "Digite su estatura : "
+	lea est
+	escriba "digite que edad tienes : "
+	lea edad
+	escriba "si es Masculino digite (m) y si es Femenino digite (f) :"
+	lea sexo
+	
+		si (sexo = "m") entonces 
+			si(edad > 18) y (est > 170) y (peso < 75 )entonces 
+				escriba nom," Bienvenido eres apto para entrar al equipo de baloncesto"
+			sino
+				escriba nom," No cumples con los requisitos no eres apto "
+			fin si
+		sino
+			si(edad > 16) y (est >= 170) y (peso <= 60 )entonces 
+				escriba nom," Bienvenida eres apta para entrar al equipo de baloncesto"
+			sino
+				escriba nom," No cumples con los requisitos no eres apta "
+			fin si
+		fin si
+		
+		
+fin

@@ -1,0 +1,11 @@
+entero I
+inicio 
+
+	para I <- 0 hasta 15 haga 
+	llamar color_texto (I)
+	escriba I, " --> color "
+	llamar nueva_linea()
+	
+	fin para
+	
+fin

@@ -1,0 +1,11 @@
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+
+}
+.btn{
+    display: flex;
+    justify-content:space-evenly
+}

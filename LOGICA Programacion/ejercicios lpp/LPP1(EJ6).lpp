@@ -1,0 +1,61 @@
+/* 6.	Crear un algoritmo que le pida al usuario los datos de un trabajador así: 
+El número de horas trabajadas en el mes, el salario básico hora, la cantidad de años
+que tiene de laborar en la empresa y el valor que le deducen mensualmente.
+ El algoritmo le debe mostrar: El salario bruto, el valor de la bonificación 
+ ($30.000 por cada año laborado), el valor de las deducciones y el salario neto 
+ 
+ 
+ analisis
+ 
+ d.e { nom, nht, sbh, alab, ded,
+ i.s { nom ,sbto, bon, ded, snto
+ d.p {sbto = nht * sbh
+ 	  bon = alab * 30000
+ 	  snto = sbto + bon - ded
+ 	  
+*/
+
+
+//declaracion de variables
+
+cadena [30] nom
+real nht, sbh, ded, sbto, bon, snto
+entero alab
+
+inicio
+
+	escriba "nombre : "
+	lea nom
+
+	escriba "digite numero de horas trabajadas : "
+	lea nht
+ 
+	escriba "digite salario basico hora :  "
+	lea sbh
+
+	escriba "digite numero de anos laborados :  "
+	lea alab
+	
+	escriba "digite las deducciones "
+	lea ded
+	
+	sbto <- nht * sbh
+	bon <- alab * 30000
+	snto <- sbto + bon - ded
+	
+	llamar nueva_linea()
+	llamar nueva_linea()
+	
+	llamar color_texto(10)
+	escriba nom
+	llamar nueva_linea()
+	escriba "su salario bruto es $ ",sbto
+	llamar nueva_linea()
+	escriba "su bonificacion es $ ", bon
+	llamar nueva_linea()
+	escriba "sus deducciones son $ ", ded
+	llamar nueva_linea()
+	escriba "su salario neto es $ " , snto
+	
+fin
+	     

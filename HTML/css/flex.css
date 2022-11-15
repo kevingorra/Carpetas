@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+
+    border: 1px solid;
+    height: 450px;
+    background-color: gold;
+
+}
+.caja{
+    border: 1px solid;
+    width: 150px;
+    height: 100px;
+
+}
+
+.box1{background-color: aqua;}
+.box2{background-color: blueviolet;}
+.box3{background-color: chocolate;}
+.box4{background-color: darkgreen;}

@@ -1,0 +1,20 @@
+body{
+  background-image: url(/img/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+/* Aplicando el posicionamiento relativo, se desplaza la primera imagen de forma descendente: */
+
+img.desplazada {    position: relative;    top: 8em;  }
+
+  /* El desplazamiento de la caja se controla con las propiedades top, right, bottom y left */
+
+  img.segundo{    position: relative;    right: 8em;}
+
+  img.tercero{      position: relative;      bottom: 16em;  }
+
+  img.cuarto{       position: relative;      left: 10em;}

@@ -1,0 +1,33 @@
+/*4.	 Elaborar un algoritmo que le permita al usuario ingresar los nombres y 
+las edades de 3 hermanos y el computador le muestre los 3 nombres y el promedio de edad de ellos. */
+
+cadena[30] nom1, nom2, nom3 
+entero edad1, edad2, edad3
+real promedio
+
+inicio
+	
+	escriba " escriba el nombre de la primera persona: "
+	lea nom1
+	escriba "escriba la edad de la primera persona:  "
+	lea edad1
+	escriba "escriba el nombre de la segunda persona: "
+	lea nom2
+	escriba "escriba la edad de la segunda persona:  "
+	lea edad2
+	escriba "escriba el nombre de la tercera persona: "
+	lea nom3
+	escriba "escriba la edad de la tercera persona: "
+	lea edad3
+	llamar nueva_linea()
+	escriba "el resultado es:"
+	llamar nueva_linea()
+	promedio <- (edad1 + edad2 + edad3)/3
+	escriba "la edad de ", nom1, " es : ", edad1
+	escriba ",la edad de ", nom2, " es : ", edad2
+	escriba ",la edad de ", nom3, " es : ", edad2
+	escriba "  y el promedio de las edades fueron:  ", promedio
+	
+
+
+fin

@@ -1,0 +1,29 @@
+/*1.	Elabore un algoritmo que permita averiguar cuál es el nombre del mayor de 2 hermanos no gemelos.
+ Como datos de entrada se tiene el nombre y la edad de las 2 personas.
+ 
+D.E { nom1, ed1, nom2, ed2
+D.s [nom1 ---> ed1> ed2
+D.P { N/A */
+
+cadena [30] nom1, nom2
+entero ed1, ed2
+inicio
+
+	escriba "ingrese el primer nombre: "
+	lea nom1
+	escriba "ingrese edad de ", nom1,  ": "
+	lea ed1
+	escriba "ingrese el sgundo nombre: "
+	lea nom2
+	escriba "ingrese edad de ", nom2,  ": "
+	lea ed2
+	si ( ed1>ed2 ) entonces
+		escriba nom1, " es el mayor"
+		
+	sino
+		escriba nom2, " es el mayor"
+		
+	fin si
+fin
+
+	

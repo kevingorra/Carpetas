@@ -1,0 +1,28 @@
+/*
+analisis 
+D.E [ nom, vmat,cm
+D.S [vrnto,nom
+D.P[vrnto= cm * vrmat+20000+8000-(cm*vrmat)*20/100
+otra forma
+vlbto=cm*vrmat
+recargo=28000
+descuento= vrbto*20/100
+vrnto= vrbto+recargo-desc
+*/
+
+cadena [30] nom
+real vmat, cm, vrnto 
+
+inicio
+
+escriba "escriba el nombre del estudiante: "
+lea nom
+escriba "cantidad de matriculas que desea matricular: "
+lea cm
+escriba "escriba el valor de las materias matriculadas: "
+lea vmat
+
+vrnto <- cm*vmat+20000+8000-(cm*vmat)*20/100
+escriba "el valor neto es: ", vrnto
+
+fin

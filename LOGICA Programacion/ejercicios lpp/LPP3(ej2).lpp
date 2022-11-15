@@ -1,0 +1,57 @@
+/* 2.	Elabore un algoritmo que lea el nombre, el salario bruto,
+ las deducciones y las bonificaciones de dos trabajadores, 
+ e imprima el nombre del que más salario neto tiene. 
+ 
+ D.E { nom1, nom2, ded1, ded2, bon1, bon2,sbto1, sbto2
+ D.S { snto1, snto2 , nom1  ---> snto1 > snto2
+ 
+ 
+ */
+ 
+ cadena [30] nom1, nom2
+ real ded1, ded2, bon1, bon2 ,sbto1, sbto2, snto1, snto2
+ 
+ inicio
+ 
+ 	escriba "digite el nombre del primer trabajador: "
+ 	lea nom1
+ 	escriba "digite el salario bruto de ", nom1, " : "
+ 	lea sbto1
+ 	escriba "digite las deducciones de " , nom1, " : "
+ 	lea ded1
+ 	escriba "digite las bonificaciones de ", nom1, " : "
+ 	lea bon1
+ 	
+ 	llamar nueva_linea()
+ 	llamar nueva_linea()
+ 	
+ 	escriba "digite el nombre del segundo trabajador: "
+ 	lea nom2
+ 	escriba "digite el salario bruto de ", nom2, " : "
+ 	lea sbto2
+ 	escriba "digite las deducciones de " , nom2, " : "
+ 	lea ded2
+ 	escriba "digite las bonificaciones de ", nom2, " : "
+ 	lea bon2
+ 	
+ 	snto1 <- sbto1 - ded1 + bon1
+ 	snto2 <- sbto2 - ded2 + bon2
+ 	
+ 	llamar nueva_linea()
+ 	llamar nueva_linea()
+ 	escriba " ##############   RESULTADO     ##############  "
+ 	llamar color_texto(9)
+ 	llamar nueva_linea()
+ 	llamar nueva_linea()
+ 	si ( snto1 > snto2 ) entonces
+ 		escriba nom1, " tiene el mayor salario con $", snto1
+ 	sino
+ 		escriba nom2, " tiene el mayor salario con $",snto2
+ 	
+ 	fin si  
+ 	
+ fin
+ 	
+ 	
+ 	 
+ 	 

@@ -1,0 +1,34 @@
+/* 3.	En un lavadero de vehículos se relacionan al final del día la cantidad de taxis que se lavaron, 
+la cantidad de buses, la cantidad de particulares y la cantidad de motos. 
+
+Se desea un programa que muestre el dinero realizado por cada tipo de vehículo 
+(taxis, buses, particulares y motos) y el total realizado en el lavadero.
+ El precio de los taxis es de $3.000, los buses a $10.000, los particulares a $5.000 y las motos a $2.000.*/
+ 
+ 
+ entero taxis, buses, part, motos,total
+
+inicio	
+	
+	escriba "cantidad de taxis que se lavaron:  "
+	lea taxis
+	escriba "cantidad de buses que se lavaron:  "
+	lea buses
+	escriba "cantidad de particulares que se lavaron: "
+	lea part
+	escriba "cantidad de motos que se lavaron: " 
+	lea motos
+	total <- (taxis*3000) + (buses*10000) + (part*5000) + (motos*2000)
+	escriba "el total de los taxis fue : ",taxis* 3000
+	llamar nueva_linea()
+	escriba "el total de buses que se lavaron fue: ", buses*10000
+	llamar nueva_linea()
+	escriba "el total de particulares que se lavaron fue: ", part*5000
+	llamar nueva_linea()
+	escriba "el total de motos que se lavaron fue: ", motos*2000
+	llamar nueva_linea()
+	escriba "el total de vehiculos lavados en el parqueadero fue de: ", total
+	
+
+
+fin

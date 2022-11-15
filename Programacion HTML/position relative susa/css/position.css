@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 200em;
+}
+
+section{border: 2px solid;
+width: 500px;
+height: 400px;
+margin: 5em auto;}
+
+div{
+    border: 5px solid;
+    color: blueviolet;
+    padding: 5em;
+    text-align: center;
+    background-color: aqua;
+    position: relative;
+    bottom: 100px ;
+   z-index: 1;
+  
+}

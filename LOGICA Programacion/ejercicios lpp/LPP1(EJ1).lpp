@@ -1,0 +1,28 @@
+/* 
+
+analisis de datos 
+
+	datos de entrada {area,alt
+	informacion de salida {base
+	datos de proceso {base= 2 * area/ alt
+	
+*/
+
+//declaracion de variables
+
+
+real area, alt, base
+
+//progrma principal
+
+inicio
+
+	escriba " ingrese el area del triangulo :"
+	lea area
+	escriba " ingrese la altura del triangulo :"
+	lea alt
+	base <- 2 * area/alt
+	escriba "la base del triangulo es : " , base 
+	
+	
+fin

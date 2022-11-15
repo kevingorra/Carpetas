@@ -1,0 +1,18 @@
+real n1,n2,n3
+inicio
+	escriba " primer numero : "
+	lea n1
+	escriba " segundo numero : "
+	lea n2
+	escriba " tercer numero : "
+	lea n3
+	si (n1 < n2) y (n1 < n3) entonces
+	 escriba " el menor es ", n1
+	sino
+		si (n2 < n3) entonces
+			escriba "el menor es ", n2
+		sino
+			escriba "el menor es ", n3
+		fin si
+	fin si
+fin

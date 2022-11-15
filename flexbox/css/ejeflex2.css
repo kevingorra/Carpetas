@@ -1,0 +1,55 @@
+.cont1{
+    height: 650px;
+    width: 1300px;
+    display: flex;
+}
+.contint1{
+    border: 1px solid;
+    height: 750px;
+    width: 750px;
+    margin: 20px;
+    padding: 20px;
+    
+}
+.box{
+    border: 1px solid;
+    margin: 10px;
+    height: 120px;
+}
+.int1{
+    display: flex;
+    padding: 10px;
+    align-items:center;
+    justify-content: space-between;
+}
+.box1{
+    border: 1px solid;
+    width: 150px;
+    height: 100px;
+}
+.int2{
+    display: flex;
+}
+.box2{
+    border: 1px solid;
+    width: 300px;
+    margin: 5px;
+    padding: 100px ; 
+}
+.boxint1{
+   border: 1px solid; 
+   margin: 10px;
+   height: 180px;
+   width: 250px;
+   text-align:center;
+   }
+   .box3{
+    border: 1px solid;
+    width: 300px;
+    margin: 5px;
+    padding: 10px ; 
+}
+
+p{
+    font-size: 25px;
+}

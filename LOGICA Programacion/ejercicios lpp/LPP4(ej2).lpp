@@ -1,0 +1,40 @@
+/*CREAR UN ALGORITMO QUE LE PERMITA AL USUARIO INGRESAR EL NOMBRE DE UN ESTUDIANTE 
+Y LAS 4 NOTAS QUE OBTUVO EN UNA MATERIA Y EL COMPUTADOR LE IMPRIMA EL NOMBRE, LA NOTA DEFINITIVA 
+Y UN MENSAJE QUE LE INDIQUE SI “GANA“, “HABILITA” O “PIERDE” 
+*/
+
+cadena[30] nom
+real nota1, nota2, nota3, nota4, notadef
+inicio
+	escriba "Digite el nombre del estudainte: "
+	lea nom
+	escriba "Digite la primera nota: "
+	lea nota1
+	escriba "Digite la segunda nota: "
+	lea nota2
+	escriba "Digite la tercera nota: "
+	lea nota3
+	escriba "Digite la cuarta nota: "
+	lea nota4
+	
+	notadef <- (nota1 + nota2 + nota3 + nota4) /4
+	
+	llamar nueva_linea()
+	escriba "El estudiante :",nom
+	llamar nueva_linea()
+	escriba "Tiene una nota definita de: ", notadef
+	llamar nueva_linea()
+	
+	si (notadef < 2) entonces 
+		escriba "Usted perdio la materia ... mas animos para la proxima"
+	sino
+		si (notadef <3) entonces 
+			escriba "Usted puede habilitar la Materia ... vamos que si se puede "
+		sino 
+			escriba "usted gano la materia "
+			
+		fin si
+	fin si
+fin
+
+	

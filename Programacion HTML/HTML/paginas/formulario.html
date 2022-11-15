@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <nav><h1>Introduccion a formularios</h1></nav>
+    <main>
+        <h1>Datos del empleado</h1>
+        <form action="">
+            <label for="identificacion">identificacion *</label><br><br>
+            <input type="text" name="identificacion" id="identificacion" required><br><br>
+            <label for="apellidos">apellidos</label><br><br>
+            <input type="text" name="apellidos" id="apellidos"><br><br>
+            <label for="nombres">nombres</label><br><br>
+            <input type="text" name="nombres" id="nombres"><br><br>
+            <label for="edad">edad</label><br><br>
+            <input type="number" name="edad" id="edad" min="18" max="60"><br><br>
+            <label for="fecha de ingreso">fecha de ingreso</label><br><br>
+            <input type="date" name="fecha de ingreso" id="fecha de ingreso"><br><br>
+            
+            
+            <fieldset>
+                <legend>seleccionar asignaturas</legend>
+                <input type="checkbox" name="introduccion" id="introduccion"> introduccion a la programacion <br><br>
+                <input type="checkbox" name="logica" id="logica">logica de la programacion <br><br>
+                <input type="checkbox" name="base" id="base"> base de Datos <br><br>
+                <input type="checkbox" name="aplicacion" id="aplicacion"> aplicaciones
+    
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+                <legend>genero</legend>
+                <input type="radio" name="genero" id="genero">Masculino
+                <input type="radio" name="genero" id="genero"> femenino
+                <input type="radio" name="genero " id="genero"> indefinido
+
+            </fieldset>
+<br><br>
+
+<label for="correo">correo electronico</label><br>
+<input type="email" name="correo" id="correo"> <br><br>
+<label for="contraseña">contraseña</label> <br><br>
+<input type="password" name="contraseña" id="contraseña" placeholder="debe tener minimo 6 numeros">
+
+<br><br><br>
+            <input type="submit" value="enviar datos">
+
+       
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* 2.	Elabore un algoritmo que lea el nombre, el salario bruto, las deducciones y
+ las bonificaciones de dos trabajadores, e imprima el nombre del que más salario neto tiene.
+ 
+ D.E { nom1, nom2, sbto1, sbto2, ded1, ded2 , bon1, bon2 , 
+ 
+ D.S { snto1, snto2, nom1 ---> snto1 
+ 							o
+ 					 nom2 ---> snto2
+ 					 
+ 					 
+*/
+
+
+cadena [30] nom1, nom2
+real sbto1, sbto2, ded1, ded2, bon1, bon2, snto1, snto2
+
+
+  

@@ -1,0 +1,46 @@
+/* 3.	Crear un algoritmo que le permita al usuario ingresar los datos de dos buses así: 
+Placa, El número de pasajeros transportado y el valor del pasaje, y el computador le muestre la placa del bus que más dinero recogió.
+
+
+D.E { placa1, placa2, pasajtrans1 , pasajtrasn2, vlrpje1, vlrpje2
+D.S { vlrnto1, vlrnto2, placa1  ---> vlrnto1 > vlrnto2
+
+*/
+
+
+cadena [6] placa1, placa2
+entero pasajtrans1, pasajtrans2
+real vlrpje1, vlrpje2, vlrnto1, vlrnto2
+
+inicio
+
+		escriba " digite la placa del primer bus:  " 
+		lea placa1
+		escriba " digite el numero de pasajeros que recogio el bus con placas ", placa1, " : " 
+		lea pasajtrans1
+		escriba " digite el valor del pasaje del bus con placas  ", placa1, " : "
+		lea vlrpje1
+		llamar nueva_linea()
+		llamar nueva_linea()
+		escriba " digite la placa del segundo bus: " 
+		lea placa2
+		escriba " digite el numero de pasajeros que recogio el bus con placas ", placa2, " : " 
+		lea pasajtrans2
+		escriba " digite el valor del pasaje del bus con placas  ", placa2, " : "
+		lea vlrpje2
+		
+		vlrnto1 <- pasajtrans1 * vlrpje1
+		vlrnto2 <- pasajtrans2 * vlrpje2
+		
+		llamar nueva_linea()
+		llamar nueva_linea()
+		
+		si ( vlrnto1 > vlrnto2 ) entonces
+			escriba "El bus que mas dinero recogio fue el primer bus con placas  ", placa1, " con : $ ", vlrnto1
+		sino
+			escriba "El bus que mas dinero recogio fue el segundo bus con placas  ", placa2, " con : $ ", vlrnto2
+		fin si
+fin
+		
+		
+		

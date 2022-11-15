@@ -1,0 +1,42 @@
+/*CREAR UN ALGORITMO QUE LE PERMITA AL USUARIO INGRESAR 3 NÚMEROS Y EL COMPUTADOR SE LOS MUESTRE EN ORDEN ASCENDENTE */
+
+real n1, n2, n3
+
+inicio
+
+	escriba "Digite el primer numero : "
+	lea n1
+	escriba "Digite el segundo numero : "
+	lea n2
+	escriba "Digite el tercer numero : "
+	lea n3
+	
+		si (n1 = n2) y (n2 = n3) entonces
+			escriba " todos son iguales no hay numeros ascendentes"
+		sino
+			si (n1 < n2) y (n1 < n3)entonces
+				si (n2 < n3)entonces
+					escriba  n1," - ", n2, " - ", n3
+				sino
+					escriba  n1," - ", n3, " - ", n2
+				fin si
+			sino
+				si (n2 < n1) y (n2 < n3)entonces
+					si (n1 < n3)entonces
+						escriba  n2," - ", n1, " - ", n3
+					sino
+						escriba  n2," - ", n3, " - ", n1
+					fin si
+				sino
+					si (n3 < n1) y (n3 < n2)entonces
+						si (n1 < n2)entonces
+							escriba  n3," - ", n1, " - ", n2
+						sino
+							escriba  n3," - ", n2, " - ", n1
+						fin si
+					fin si
+				fin si
+			fin si
+		fin si
+fin
+	

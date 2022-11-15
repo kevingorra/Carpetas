@@ -1,0 +1,48 @@
+/*5.	Crear un algoritmo que le permita al usuario ingresar el tipo de trabajador (FIJO o TEMPORAL) 
+y con base en esto pueda imprimir el nombre y el salario neto, sabiendo que si es FIJO debe leer el nombre, 
+el número de horas trabajadas, el salario básico hora, el total de deducciones y el total de bonificaciones y
+si es TEMPORAL solo debe leer el nombre y el número de horas trabajadas; estos trabajadores tienen un salario
+básico hora fijo de $6.000.oo y no tienen deducciones ni bonificaciones.
+
+
+D.E{ tipotr, fijo = nom, nht, sbh, ded, bon
+			 temporal = nom, nht 
+
+D.S{ nom, snto
+
+
+*/
+
+cadena [8] tipotrab
+cadena[30] nom
+real snto, sbh, ded, bon,nht
+
+
+
+inicio 
+
+	escriba "digite el tipo de trabajador (fijo/temporal) :"
+	lea tipotrab
+	si(tipotrab = "fijo") entonces
+		escriba "nombre del tarabajador : "
+		lea nom
+		escriba "horas laboradas :  "
+		lea nht
+		escriba "salario basico hora : "
+		lea sbh
+		escriba "deduciones: "
+		lea ded
+		escriba "bonificaciones : "
+		lea bon
+		snto <- nht * sbh - ded + bon
+		escriba nom, "su salario neto es $ ", snto
+	sino
+		escriba "nombre del tarabajador : "
+		lea nom
+		escriba "horas laboradas :  "
+		lea nht
+		snto <- nht * 6000
+		escriba nom, "su salario neto es $ ", snto
+	fin si
+fin
+		
